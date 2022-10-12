@@ -1,2 +1,2 @@
 n=input()
-print(" ".join(reversed(n.split())))
+print(n[::-1])
