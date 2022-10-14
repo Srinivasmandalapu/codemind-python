@@ -1,13 +1,15 @@
 def prime(n):
-    while n:
-        c = 0
-        for i in range(2,n//2):
-            if n%i==0:
-                c+=1
-        if c==0:
-            return n
-        n+=1
-        
-a = int(input())
-b = int(input())
-print(prime(a+b+1)-(a+b))
+    if(n==1):
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if(n%i==0):
+            return 0
+    return 1
+n=int(input())
+m=int(input())
+c=1
+while(1):
+    if(prime(n+m+c)):
+        print(c)
+        break
+    c+=1
