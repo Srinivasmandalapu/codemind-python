@@ -1,20 +1,20 @@
 n=int(input())
-a=list(map(int,input().split()))
-l=[]
-k=[]
-for i in range(n):
-    if a[i]%2==0:
-        l.append(a[i])
+l=list(map(int,input().split()))
+e=[]
+o=[]
+for i in l:
+    if(i%2==0):
+        e.append(i)
     else:
-        k.append(a[i])
+        o.append(i)
 i=0
 j=0
-while i<len(l) or j<len(k):
-    if i<len(l):
-        print(l[i],end=' ')
+while(i<len(e) or j<len(o)):
+    if(i<len(e)):
+        print(e[i],end=" ")
         i+=1
-    if j<len(k):
-        print(k[j],end=' ')
+    if(j<len(o)):
+        print(o[j],end=" ")
         j+=1
-if n%2!=0:
-    print('0')
+if(n%2!=0):
+    print(0)
